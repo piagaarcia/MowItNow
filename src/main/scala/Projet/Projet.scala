@@ -4,13 +4,13 @@ import java.io.{FileNotFoundException, IOException}
 import scala.io.Source.fromResource
 
 
-class Tondeuse (var coordonnees : Int,
-                var orientation : String)
 
 
 object Projet extends App {
 
-/*fichier fourni en entrée*/
+
+
+/*fichier test en entrée*/
   try {
     var input = fromResource("test.txt").getLines()
   } catch {
@@ -18,7 +18,14 @@ object Projet extends App {
     case e: IOException => println("Had an IOException trying to read that file")
   }
 
+  class Tondeuse (var Direction : String,
+                  var orientation : String)
+
+
 /*definir les directions de la tondeuse*/
+
+  val sequence = Seq(N, E, W, S)
+
     private def Direction {
       case "N" => Direction.N
       case "E" => Direction.E
@@ -35,5 +42,23 @@ object Projet extends App {
 
     }
 
-  val sequence = Seq(N, E, W, S)
+  /*controler la tondeuse. Orientation: D (Droite) G (gauche) A (avancer)
+
+   */
+
+  val sequence = Seq(D, G, A)
+
+  private def orientation {
+    case "D" => Direction.D
+    case "G" => Direction.G
+    case "A" => Direction.A
+
+    case Direction.D => "D"
+    case Direction.G => "G"
+    case Direction.A => "A"
+
+
+
+
+
 }
