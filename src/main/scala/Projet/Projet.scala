@@ -27,18 +27,26 @@ object Projet extends App {
   val sequence = Seq(N, E, W, S)
 
     private def Direction {
-      case "N" => Direction.N
-      case "E" => Direction.E
-      case "W" => Direction.W
-      case "S" => Direction.S
+      case "N"
+      => Direction.N
+      case "E"
+      => Direction.E
+      case "W"
+      => Direction.W
+      case "S"
+      => Direction.S
 
-      case Direction.N => "N"
-      case Direction.E => "E"
-      case Direction.W => "W"
-      case Direction.S => "S"
+      case Direction.N
+      => "N"
+      case Direction.E
+      => "E"
+      case Direction.W
+      => "W"
+      case Direction.S
+      => "S"
 
 
-
+    }
 
     }
 
@@ -49,15 +57,21 @@ object Projet extends App {
   val sequence = Seq(D, G, A)
 
   private def orientation {
-    case "D" => Direction.D
-    case "G" => Direction.G
-    case "A" => Direction.A
+    case "D"
+    => orientation.D
+    case "G"
+    => orientation.G
+    case "A"
+    => orientation.A
 
-    case Direction.D => "D"
-    case Direction.G => "G"
-    case Direction.A => "A"
+    case orientation.D
+    => "D"
+    case orientation.G
+    => "G"
+    case orientation.A
+    => "A"
 
-
+  }
 
 
 

@@ -1,9 +1,7 @@
 package Projet
 
 object direction extends App {
-    type Direction = Value
 
-    val N, S, E, W = Value
-
-
-  }
+    val Direction=  Seq(N, E, W, S)
+     type Direction = Value
+}
